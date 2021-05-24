@@ -1,0 +1,52 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ .container {
+     max-width: 1160px;
+     padding: 0 10px;
+     margin: 0 auto;
+ }
+
+ .header {
+     background-color: #222222;
+     padding: 18px 0 19px 0;
+ }
+
+ .header_wrap {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .header_logo {
+     margin-right: 41px;
+ }
+
+ .header_item:not(:last-child) {
+     margin-right: 33px;
+ }
+
+ .top {
+     height: 764px;
+     background-color: #F1E4E6;
+ }
+
+ .top_wrap {
+     display: flex;
+ }
+
+ .top_image {
+     width: 50%;
+     background: url(/image/top-man.png) no-repeat;
+     background-size: contain;
+ }
+
+ .top_heading {
+     width: 50%;
+ }
+
+ .heading {
+     width: 405px;
+ }
