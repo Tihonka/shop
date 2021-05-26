@@ -4,6 +4,10 @@
      box-sizing: border-box;
  }
 
+ body {
+     font-family: Lato;
+ }
+
  .container {
      max-width: 1160px;
      padding: 0 10px;
@@ -31,22 +35,349 @@
  .top {
      height: 764px;
      background-color: #F1E4E6;
+     margin-bottom: 65px;
  }
 
  .top_wrap {
      display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     height: 100%;
+     background: url(../image/top-man.png) no-repeat -228px bottom;
+
  }
 
- .top_image {
+ .top_text {
      width: 50%;
-     background: url(/image/top-man.png) no-repeat;
-     background-size: contain;
  }
 
- .top_heading {
-     width: 50%;
+ .top_text h1 {
+     border-left: 12px solid #F16D7F;
+     padding-left: 16px;
+     font-style: normal;
+     font-weight: 900;
+     font-size: 48px;
+     line-height: 38px;
  }
 
- .heading {
-     width: 405px;
+ .heading_decor {
+     font-weight: 700;
+     font-size: 32px;
+ }
+
+ .top_decor {
+     color: #F16D7F;
+ }
+
+ .catalog {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     gap: 30px;
+     margin-bottom: 96px;
+ }
+
+ .catalog-item {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+ }
+
+ .catalog-item:before {
+     content: '';
+     background-color: rgba(0, 0, 0, 0.6);
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: 2;
+ }
+
+ .catalog-item:not(:last-child) {
+     width: 360px;
+     height: 260px;
+ }
+
+ .catalog-item:last-child {
+     width: 100%;
+     height: 180px;
+ }
+
+ .for_women {
+     background: url(../image/for_women.png) no-repeat;
+
+ }
+
+ .for_men {
+     background: url(../image/for_men.png) no-repeat;
+ }
+
+ .for_kids {
+     background: url(../image/for_kids.png) no-repeat;
+ }
+
+ .accesories {
+     background: url(../image/accesories.png) no-repeat;
+ }
+
+ .heading_catalog {
+     font-style: normal;
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 19px;
+     text-align: center;
+     color: #FFFFFF;
+     z-index: 3;
+ }
+
+ .text_decor {
+     font-weight: 700;
+     font-size: 24px;
+     line-height: 29px;
+     color: #F16D7F;
+ }
+
+ .content {
+     margin-bottom: 95px;
+ }
+
+ .item_container {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     gap: 30px;
+     margin-bottom: 48px;
+ }
+
+ .content-item {
+     width: 360px;
+     padding-bottom: 20px;
+     background: #F8F8F8;
+ }
+
+ .content_img {
+     position: relative;
+     width: 360px;
+     height: 420px;
+ }
+
+ .content_img:hover::after {
+     content: "";
+     background: url(../image/Hover.png) no-repeat;
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: 10;
+ }
+
+ .content-item a {
+     text-decoration: none;
+     color: #000000;
+ }
+
+ .heading_content {
+     font-style: normal;
+     font-weight: normal;
+     font-size: 30px;
+     line-height: 36px;
+     text-align: center;
+     margin-bottom: 6px;
+ }
+
+ .text {
+     font-style: normal;
+     font-weight: normal;
+     font-size: 14px;
+     line-height: 17px;
+     color: #9F9F9F;
+     text-align: center;
+     margin-bottom: 48px;
+ }
+
+ .heading_item {
+     font-style: normal;
+     font-weight: normal;
+     font-size: 13px;
+     line-height: 16px;
+     margin: 25px 0 13px 18px;
+ }
+
+ .text_item {
+     max-width: 314px;
+     font-style: normal;
+     font-weight: 300;
+     font-size: 14px;
+     line-height: 17px;
+     color: #5D5D5D;
+     margin-left: 16px;
+     margin-bottom: 18px;
+ }
+
+ .price {
+     font-style: normal;
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 19px;
+     color: #F16D7F;
+     margin-left: 18px;
+ }
+
+ .link_product {
+     text-align: center;
+ }
+
+ .all_product {
+     font-style: normal;
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 19px;
+     color: #F26376;
+     padding: 15px 39px 14px 39px;
+     border: 1px solid #FF6A6A;
+     text-decoration: none;
+ }
+
+ .service {
+     background: #222224;
+     padding: 104px 0 104px 0;
+ }
+
+ .service_container {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .service-item {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     max-width: 360px;
+     padding: 0 25px 0 30px;
+ }
+
+ .service-item a {
+     text-decoration: none;
+ }
+
+ .heading_service {
+     font-style: normal;
+     font-weight: normal;
+     font-size: 19.96px;
+     line-height: 24px;
+     color: #FBFBFB;
+     margin-bottom: 16px;
+     margin-top: 25px;
+ }
+
+ .text_service {
+     font-style: normal;
+     font-weight: 300;
+     font-size: 13.972px;
+     line-height: 17px;
+     text-align: center;
+     color: #FBFBFB;
+     text-align: center;
+ }
+
+ .feedback {
+     height: 448px;
+     background: url(../image/feedback_back.jpg) no-repeat;
+     background-size: cover;
+ }
+
+ .feedback_container {
+     display: flex;
+     justify-content: space-between;
+     padding: 97px 0 126px 0;
+ }
+
+ .info {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .text_info {
+     max-width: 360px;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 20px;
+     line-height: 24px;
+     text-align: center;
+     margin-top: 30px;
+
+ }
+
+ .form_heading {
+     margin-top: 53px;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 24px;
+     line-height: 30px;
+     text-align: center;
+     margin-bottom: 32px;
+ }
+
+ .form_decor {
+     font-weight: 400;
+     font-size: 18px;
+ }
+
+ .form_footer {
+     display: flex;
+
+ }
+
+ .email {
+     padding: 16px 70px 17px 22px;
+     border-radius: 25px 0 0 25px;
+     background-color: #E1E1E1;
+     border: none;
+ }
+
+ .text::placeholder {
+     padding: 10px;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 14px;
+     line-height: 17px;
+     display: flex;
+     align-items: center;
+     color: #222224;
+     opacity: 0.67;
+ }
+
+ .submit {
+     padding: 17px 20px 16px 21px;
+     cursor: pointer;
+     border-radius: 0 25px 25px 0;
+     background-color: #F16D7F;
+     color: white;
+     border: none;
+ }
+
+ .bottom {
+     background: #222224;
+     padding: 24px 0 23px 0;
+ }
+
+ .bottom_container {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .text_bottom {
+     font-style: normal;
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 19px;
+     color: #FBFBFB;
+ }
+
+ .social_icons a:not(:last-child) {
+     margin-right: 7px;
  }
