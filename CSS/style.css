@@ -398,7 +398,6 @@
  .intro {
      background-color: #F8F3F4;
      padding: 59px 0 60px 0;
-     margin-bottom: 51px;
  }
 
  .intro_container {
@@ -435,6 +434,7 @@
 
  .filter-menu {
      display: flex;
+     margin-top: 51px;
  }
 
  .filter_container {
@@ -598,4 +598,132 @@
  .back-forward {
      border: none;
      background-color: white;
+ }
+
+
+
+ /* Страница продукта: */
+
+ .slider {
+     padding: 11px 0 42px 0;
+     background: #F7F7F7;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .slider-back,
+ .slider-forward {
+     width: 47px;
+     height: 47px;
+     align-self: center;
+     background: rgba(42, 42, 42, 0.15);
+     border: none;
+ }
+
+ .product__info {
+     position: relative;
+     margin-top: -60px;
+     background-color: white;
+     z-index: 2;
+     padding: 64px 0 65px 0;
+     margin-bottom: 129px;
+ }
+
+ .collection {
+     font-style: normal;
+     font-weight: 300;
+     font-size: 14px;
+     line-height: 17px;
+     color: #F16D7F;
+     text-align: center;
+ }
+
+ .collection::after {
+     content: "";
+     display: block;
+     width: 63px;
+     height: 3px;
+     background: #EF5B70;
+     margin: 12px auto;
+ }
+
+ .product_name {
+     font-style: normal;
+     font-weight: 300;
+     font-size: 18px;
+     line-height: 22px;
+     color: #4D4D4D;
+     text-align: center;
+     margin-bottom: 48px;
+ }
+
+ .about_product {
+     font-style: normal;
+     font-weight: 300;
+     font-size: 14px;
+     line-height: 17px;
+     text-align: center;
+     color: #5E5E5E;
+     width: 555px;
+     margin: 0 auto 32px auto;
+ }
+
+ .product_price {
+     font-style: normal;
+     font-weight: 300;
+     font-size: 24px;
+     line-height: 29px;
+     color: #EF5B70;
+     text-align: center;
+     margin-bottom: 65px;
+ }
+
+ .product__info hr {
+     border: 1px solid #EAEAEA;
+     width: 641px;
+     margin: 0 auto;
+ }
+
+ .product-filter {
+     display: flex;
+     justify-content: center;
+     gap: 23px;
+     margin: 65px auto 49px auto;
+ }
+
+ .product-filter div {
+     font-style: normal;
+     font-weight: normal;
+     font-size: 14px;
+     line-height: 17px;
+     color: #6F6E6E;
+ }
+
+ .vector {
+     margin-left: 9px;
+ }
+
+ .to_cart {
+     margin: 0 auto;
+     border: 1px solid #FF6A6A;
+     width: 211px;
+ }
+
+ .to_cart a {
+     text-decoration: none;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 47px;
+     color: #F26376;
+ }
+
+ .cart {
+     margin: 14px 23px 0 23px;
+ }
+
+ .other_products {
+     display: flex;
+     gap: 30px;
+     margin-bottom: 128px;
  }
