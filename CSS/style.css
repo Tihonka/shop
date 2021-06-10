@@ -106,6 +106,11 @@ body {
   position: relative;
 }
 
+.catalog-item:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .catalog-item:not(:last-child) {
   width: 360px;
   height: 260px;
@@ -117,19 +122,19 @@ body {
 }
 
 .for_women {
-  background: url(../image/for_women.jpg) no-repeat;
+  background: url(../image/dark_back.png) no-repeat, url(../image/for_women.jpg) no-repeat;
 }
 
 .for_men {
-  background: url(../image/for_men.jpg) no-repeat;
+  background: url(../image/dark_back.png) no-repeat, url(../image/for_men.jpg) no-repeat;
 }
 
 .for_kids {
-  background: url(../image/for_kids.jpg) no-repeat;
+  background: url(../image/dark_back.png) no-repeat, url(../image/for_kids.jpg) no-repeat;
 }
 
 .accesories {
-  background: url(../image/accesories.jpg) no-repeat;
+  background: url(../image/dark_back2.png) no-repeat, url(../image/accesories.jpg) no-repeat;
 }
 
 .heading_catalog {
@@ -245,6 +250,16 @@ body {
   text-align: center;
 }
 
+.link_product:hover {
+  -webkit-transform: skewX(-25deg);
+          transform: skewX(-25deg);
+}
+
+.link_product:hover a {
+  color: white;
+  background-color: #F16D7F;
+}
+
 .all_product {
   font-style: normal;
   font-weight: normal;
@@ -283,6 +298,75 @@ body {
           align-items: center;
   max-width: 360px;
   padding: 0 25px 0 30px;
+}
+
+.delivery:hover {
+  -webkit-transform: scale(1.5) translateX(80px);
+          transform: scale(1.5) translateX(80px);
+  -webkit-transition: all ease-in-out 2s;
+  transition: all ease-in-out 2s;
+}
+
+.sales:hover {
+  -webkit-transform: scale(3) rotate(360deg);
+          transform: scale(3) rotate(360deg);
+  -webkit-transition: all linear 2s;
+  transition: all linear 2s;
+}
+
+@-webkit-keyframes crown {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    fill: #F16D7F;
+  }
+  30% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    fill: #f0e006;
+  }
+  60% {
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+    fill: #06f71a;
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    fill: #4400ff;
+  }
+}
+
+@keyframes crown {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    fill: #F16D7F;
+  }
+  30% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    fill: #f0e006;
+  }
+  60% {
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+    fill: #06f71a;
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    fill: #4400ff;
+  }
+}
+
+.assurance {
+  fill: #F16D7F;
+}
+
+.assurance:hover {
+  -webkit-animation: crown linear 4s;
+          animation: crown linear 4s;
 }
 
 .service-item a {
@@ -607,10 +691,11 @@ details > ul > li {
 }
 
 .category_items {
-  margin: 24px 0 24px 17px;
+  margin: 20px 0 20px 17px;
 }
 
-.category_items > li {
+.category_items > li > a {
+  text-decoration: none;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -619,7 +704,7 @@ details > ul > li {
 }
 
 .category_items > li:not(:last-child) {
-  margin-bottom: 11px;
+  margin-bottom: 9px;
 }
 
 .catalog {
@@ -850,7 +935,6 @@ details > ul > li {
 .cart-intro {
   background-color: #F8F3F4;
   padding: 59px 0 60px 0;
-  margin-bottom: 96px;
 }
 
 .cart-intro h1 {
@@ -867,6 +951,7 @@ details > ul > li {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 128px;
+  margin-top: 96px;
 }
 
 .buy__items {
@@ -1062,5 +1147,167 @@ details > ul > li {
   background: #F16D7F;
   padding: 15px 39px 16px 39px;
   border: none;
+}
+
+.registration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 64px;
+  margin-bottom: 96px;
+}
+
+.registration__form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 360px;
+  margin-right: 128px;
+}
+
+.registration__form form h3 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-bottom: 20px;
+}
+
+.registration__form form input {
+  padding: 13px 0 16px 17px;
+}
+
+.registration__form form input::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.registration__form form input:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.registration__form form input::-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.registration__form form input::placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.registration__form form .name,
+.registration__form form .login {
+  margin-bottom: 21px;
+}
+
+.registration__form form .gender {
+  margin: 31px 0 33px 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.registration__form form .gender label {
+  margin-left: 10px;
+}
+
+.registration__form form .gender .male {
+  margin-right: 20px;
+}
+
+.registration__form form .gender__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.registration__form form .gender__item input {
+  width: 17px;
+  height: 17px;
+}
+
+.registration__form form p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin: 16px 0 39px 0;
+}
+
+.registration__form form button {
+  padding: 15px 28px 16px 29px;
+  background-color: #F16D7F;
+  border: none;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.registration__form form button::after {
+  content: "→";
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.registration__advantage h2 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 22px;
+}
+
+.registration__advantage p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 21px;
+}
+
+.registration__advantage li {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 16px;
+  list-style-image: url(../image/advantage_vector.svg);
+  padding-left: 22px;
+  margin-left: 30px;
 }
 /*# sourceMappingURL=style.css.map */
