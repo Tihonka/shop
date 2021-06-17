@@ -26,6 +26,7 @@ body {
 .burger-menu {
   background-color: #222222;
   border: none;
+  cursor: pointer;
 }
 
 .header__nav {
@@ -104,6 +105,7 @@ body {
 
 .nav__item a {
   text-decoration: none;
+  color: #6F6E6E;
 }
 
 .header_wrap {
@@ -194,6 +196,7 @@ body {
 .catalog-item:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  cursor: pointer;
 }
 
 .catalog-item:not(:last-child) {
@@ -539,11 +542,15 @@ body {
 }
 
 .email {
-  padding: 16px 70px 17px 22px;
+  padding: 16px 10px 17px 22px;
   border-radius: 25px 0 0 25px;
   background-color: #E1E1E1;
   border: none;
   margin-right: -3px;
+}
+
+.email:focus {
+  outline: none;
 }
 
 .text::-webkit-input-placeholder {
@@ -712,7 +719,7 @@ body {
 }
 
 .filter_container {
-  width: 390px;
+  margin-right: 314px;
 }
 
 .catalog_filters {
@@ -758,6 +765,10 @@ details > ul > li {
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .filer_inside {
@@ -770,6 +781,7 @@ details > ul > li {
   border-bottom: 1px solid #EBEBEB;
   padding-left: 11px;
   margin-bottom: 18px;
+  cursor: pointer;
 }
 
 .category {
@@ -879,6 +891,7 @@ details > ul > li {
 .back-forward {
   border: none;
   background-color: white;
+  cursor: pointer;
 }
 
 /* Страница продукта: */
@@ -902,6 +915,7 @@ details > ul > li {
       align-self: center;
   background: rgba(42, 42, 42, 0.15);
   border: none;
+  cursor: pointer;
 }
 
 .product__info {
@@ -1133,6 +1147,7 @@ details > ul > li {
   padding: 17px 40px 16px 40px;
   border: 1px solid #A4A4A4;
   background: #FFFFFF;
+  cursor: pointer;
 }
 
 .buy__form {
@@ -1175,7 +1190,7 @@ details > ul > li {
   font-size: 13px;
   line-height: 16px;
   color: #222222;
-  padding-left: 17px;
+  padding: 0 10px 0 17px;
 }
 
 .buy__form form .quote {
@@ -1187,6 +1202,8 @@ details > ul > li {
   padding: 10px 14px 12px 15px;
   margin-right: auto;
   margin-bottom: 58px;
+  border: 1px solid #A4A4A4;
+  cursor: pointer;
 }
 
 .buy__form .cost {
@@ -1233,6 +1250,7 @@ details > ul > li {
   background: #F16D7F;
   padding: 15px 39px 16px 39px;
   border: none;
+  cursor: pointer;
 }
 
 .registration {
@@ -1265,7 +1283,7 @@ details > ul > li {
 }
 
 .registration__form form input {
-  padding: 13px 0 16px 17px;
+  padding: 13px 10px 16px 17px;
 }
 
 .registration__form form input::-webkit-input-placeholder {
@@ -1359,6 +1377,7 @@ details > ul > li {
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .registration__form form button::after {
@@ -1476,6 +1495,26 @@ details > ul > li {
   .bottom {
     padding: 24px 22px 23px 22px;
   }
+  .filter-menu {
+    margin-top: 24px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .catalog {
+    margin-top: 40px;
+    margin-bottom: 0;
+    gap: 16px;
+  }
+  .catalog .content__none {
+    display: none;
+  }
+  .page_switch {
+    margin: 40px auto 64px auto;
+  }
+  .slider {
+    padding: 30px 0 0 29px;
+  }
 }
 
 @media (max-width: 376px) {
@@ -1574,6 +1613,46 @@ details > ul > li {
         -ms-flex-align: center;
             align-items: center;
     gap: 40px;
+  }
+  .intro {
+    padding: 24px 0 46px 0;
+  }
+  .intro .intro_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .intro .intro_container .heading_intro {
+    margin-bottom: 32px;
+  }
+  .filter-menu .filter_container {
+    margin-right: 0;
+  }
+  .filter-menu .filter_container .filter svg {
+    width: 38px;
+    height: 25px;
+  }
+  .filter-menu .filter_trend,
+  .filter-menu .size,
+  .filter-menu .filtr_price {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .filter-menu .mobile_none {
+    display: none;
+  }
+  .catalog {
+    padding: 0;
+    margin-top: 32px;
   }
 }
 /*# sourceMappingURL=style.css.map */
