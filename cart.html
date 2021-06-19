@@ -107,7 +107,11 @@
         <section class="buy container">
             <div class="buy__items">
                 <article>
-                    <img src="../shop/image/item_3.jpg" alt="man">
+                    <picture>
+                        <source media="(max-width: 376px)" srcset="../shop/image/cart_mobile1.jpg">
+                        <img src="../shop/image/item_3.jpg" alt="man">
+                    </picture>
+
                     <div class="text">
                         <h2>MANGO PEOPLE T-SHIRT</h2>
                         <p>Price: <span> $300</span> </p>
@@ -123,7 +127,11 @@
                     </svg>
                 </article>
                 <article>
-                    <img src="../shop/image/catalog_item2.jpg" alt="man">
+                    <picture>
+                        <source media="(max-width: 376px)" srcset="../shop/image/cart_mobile2.jpg">
+                        <img src="../shop/image/catalog_item2.jpg" alt="man">
+                    </picture>
+
                     <div class="text">
                         <h2>MANGO PEOPLE T-SHIRT</h2>
                         <p>Price: <span> $300</span> </p>
@@ -145,11 +153,13 @@
             </div>
             <div class="buy__form">
                 <form action="#">
-                    <h2>SHIPPING ADRESS</h2>
-                    <input type="text" placeholder="Bangladesh">
-                    <input type="text" placeholder="State">
-                    <input type="number" placeholder="Postcode / Zip">
-                    <button class="quote">GET A QUOTE</button>
+                    <div class="form__input">
+                        <h2>SHIPPING ADRESS</h2>
+                        <input type="text" placeholder="Bangladesh">
+                        <input type="text" placeholder="State">
+                        <input type="number" placeholder="Postcode / Zip">
+                        <button class="quote">GET A QUOTE</button>
+                    </div>
                     <div class="cost">
                         <pre class="cost__sub">SUB TOTAL    $900</pre>
                         <pre class="cost__total">GRAND TOTAL    <span>$900</span></pre>
