@@ -24,11 +24,75 @@
                 </a>
             </div>
             <div class="header_right">
-                <img class="header_item" src="image/burger.svg" width="32" height="23" alt="menu">
-                <a class="header_item" href="./registration.html">
+
+                <input type="checkbox" id="burger">
+                <label class="header__menu header_item burger-menu" for="burger"><img src="../shop/image/burger.svg"
+                        width="32" height="23" alt="menu"></label>
+                <nav class="header__nav nav">
+                    <div class="nav__wrap">
+                        <label class="nav__close" for="burger"><img src="../shop/image/close.svg" width="12" height="12"
+                                alt="close"></label>
+                        <h2 class="nav__title">MENU</h2>
+                        <h3 class="nav__heading">MAN</h3>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Accessories</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Bags</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Denim</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">T-Shirts</a>
+                            </li>
+                        </ul>
+
+                        <h3 class="nav__heading">WOMAN</h3>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Accessories</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Jackets & Coats</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Polos</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">T-Shirts</a>
+                            </li>
+                        </ul>
+
+                        <h3 class="nav__heading">KIDS</h3>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Accessories</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Jackets & Coats</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Polos</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">T-Shirts</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Shirts</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Bags</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <a class="header_item registration_icon" href="./registration.html">
                     <img src="image/registration.svg" width="29" height="29" alt="registration">
                 </a>
-                <a class="header_item" href="./cart.html">
+                <a class="header_item cart_icon" href="./cart.html">
                     <img src="image/cart.png" width="41" height="37" alt="">
                 </a>
             </div>
@@ -43,7 +107,11 @@
         <section class="buy container">
             <div class="buy__items">
                 <article>
-                    <img src="../shop/image/item_3.jpg" alt="man">
+                    <picture>
+                        <source media="(max-width: 376px)" srcset="../shop/image/cart_mobile1.jpg">
+                        <img src="../shop/image/item_3.jpg" alt="man">
+                    </picture>
+
                     <div class="text">
                         <h2>MANGO PEOPLE T-SHIRT</h2>
                         <p>Price: <span> $300</span> </p>
@@ -59,7 +127,11 @@
                     </svg>
                 </article>
                 <article>
-                    <img src="../shop/image/catalog_item2.jpg" alt="man">
+                    <picture>
+                        <source media="(max-width: 376px)" srcset="../shop/image/cart_mobile2.jpg">
+                        <img src="../shop/image/catalog_item2.jpg" alt="man">
+                    </picture>
+
                     <div class="text">
                         <h2>MANGO PEOPLE T-SHIRT</h2>
                         <p>Price: <span> $300</span> </p>
@@ -81,11 +153,13 @@
             </div>
             <div class="buy__form">
                 <form action="#">
-                    <h2>SHIPPING ADRESS</h2>
-                    <input type="text" placeholder="Bangladesh">
-                    <input type="text" placeholder="State">
-                    <input type="number" placeholder="Postcode / Zip">
-                    <button class="quote">GET A QUOTE</button>
+                    <div class="form__input">
+                        <h2>SHIPPING ADRESS</h2>
+                        <input type="text" placeholder="Bangladesh">
+                        <input type="text" placeholder="State">
+                        <input type="number" placeholder="Postcode / Zip">
+                        <button class="quote">GET A QUOTE</button>
+                    </div>
                     <div class="cost">
                         <pre class="cost__sub">SUB TOTAL    $900</pre>
                         <pre class="cost__total">GRAND TOTAL    <span>$900</span></pre>
@@ -108,12 +182,12 @@
                 <div class="form">
                     <h2 class="form_heading">SUBSCRIBE <br>
                         <span class="form_decor"> FOR OUR NEWLETTER AND PROMOTION</span></h2>
-                    <form action="#">
-                        <div class="form_footer">
+                    <div class="form_footer">
+                        <form action="#">
                             <input class="email" name="email" placeholder="Enter Your Email" type="email">
                             <input class="submit" name="submit" type="submit" value="Subscribe">
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

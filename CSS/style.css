@@ -26,6 +26,7 @@ body {
 .burger-menu {
   background-color: #222222;
   border: none;
+  cursor: pointer;
 }
 
 .header__nav {
@@ -104,6 +105,7 @@ body {
 
 .nav__item a {
   text-decoration: none;
+  color: #6F6E6E;
 }
 
 .header_wrap {
@@ -194,6 +196,7 @@ body {
 .catalog-item:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  cursor: pointer;
 }
 
 .catalog-item:not(:last-child) {
@@ -539,11 +542,15 @@ body {
 }
 
 .email {
-  padding: 16px 70px 17px 22px;
+  padding: 16px 10px 17px 22px;
   border-radius: 25px 0 0 25px;
   background-color: #E1E1E1;
   border: none;
   margin-right: -3px;
+}
+
+.email:focus {
+  outline: none;
 }
 
 .text::-webkit-input-placeholder {
@@ -712,7 +719,7 @@ body {
 }
 
 .filter_container {
-  width: 390px;
+  margin-right: 314px;
 }
 
 .catalog_filters {
@@ -758,6 +765,10 @@ details > ul > li {
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .filer_inside {
@@ -770,6 +781,7 @@ details > ul > li {
   border-bottom: 1px solid #EBEBEB;
   padding-left: 11px;
   margin-bottom: 18px;
+  cursor: pointer;
 }
 
 .category {
@@ -879,6 +891,7 @@ details > ul > li {
 .back-forward {
   border: none;
   background-color: white;
+  cursor: pointer;
 }
 
 /* Страница продукта: */
@@ -902,6 +915,7 @@ details > ul > li {
       align-self: center;
   background: rgba(42, 42, 42, 0.15);
   border: none;
+  cursor: pointer;
 }
 
 .product__info {
@@ -911,6 +925,7 @@ details > ul > li {
   z-index: 2;
   padding: 64px 0 65px 0;
   margin-bottom: 129px;
+  border: 1px solid #EAEAEA;
 }
 
 .collection {
@@ -948,7 +963,7 @@ details > ul > li {
   line-height: 17px;
   text-align: center;
   color: #5E5E5E;
-  width: 555px;
+  max-width: 555px;
   margin: 0 auto 32px auto;
 }
 
@@ -1063,10 +1078,6 @@ details > ul > li {
           box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
 }
 
-.buy__items article img {
-  width: 262px;
-}
-
 .buy__items article .text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1133,6 +1144,7 @@ details > ul > li {
   padding: 17px 40px 16px 40px;
   border: 1px solid #A4A4A4;
   background: #FFFFFF;
+  cursor: pointer;
 }
 
 .buy__form {
@@ -1146,7 +1158,7 @@ details > ul > li {
           flex-direction: column;
 }
 
-.buy__form form {
+.buy__form .form__input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1156,7 +1168,7 @@ details > ul > li {
           flex-direction: column;
 }
 
-.buy__form form h2 {
+.buy__form .form__input h2 {
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -1165,7 +1177,7 @@ details > ul > li {
   margin-bottom: 20px;
 }
 
-.buy__form form input {
+.buy__form .form__input input {
   width: 360px;
   height: 45px;
   margin-bottom: 20px;
@@ -1175,10 +1187,10 @@ details > ul > li {
   font-size: 13px;
   line-height: 16px;
   color: #222222;
-  padding-left: 17px;
+  padding: 0 10px 0 17px;
 }
 
-.buy__form form .quote {
+.buy__form .form__input .quote {
   font-style: normal;
   font-weight: 300;
   font-size: 11px;
@@ -1187,6 +1199,9 @@ details > ul > li {
   padding: 10px 14px 12px 15px;
   margin-right: auto;
   margin-bottom: 58px;
+  border: 1px solid #A4A4A4;
+  cursor: pointer;
+  background-color: white;
 }
 
 .buy__form .cost {
@@ -1233,6 +1248,7 @@ details > ul > li {
   background: #F16D7F;
   padding: 15px 39px 16px 39px;
   border: none;
+  cursor: pointer;
 }
 
 .registration {
@@ -1265,7 +1281,7 @@ details > ul > li {
 }
 
 .registration__form form input {
-  padding: 13px 0 16px 17px;
+  padding: 13px 10px 16px 17px;
 }
 
 .registration__form form input::-webkit-input-placeholder {
@@ -1315,14 +1331,15 @@ details > ul > li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 20px;
+}
+
+.registration__form form .gender .desktop_none {
+  display: none;
 }
 
 .registration__form form .gender label {
   margin-left: 10px;
-}
-
-.registration__form form .gender .male {
-  margin-right: 20px;
 }
 
 .registration__form form .gender__item {
@@ -1359,6 +1376,7 @@ details > ul > li {
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .registration__form form button::after {
@@ -1400,6 +1418,7 @@ details > ul > li {
 @media (max-width: 768px) {
   .container {
     max-width: 756px;
+    margin: 0 auto;
   }
   .top {
     height: 368px;
@@ -1476,11 +1495,107 @@ details > ul > li {
   .bottom {
     padding: 24px 22px 23px 22px;
   }
+  .filter-menu {
+    margin-top: 24px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .catalog {
+    margin-top: 40px;
+    margin-bottom: 0;
+    gap: 16px;
+  }
+  .catalog .content__none {
+    display: none;
+  }
+  .page_switch {
+    margin: 40px auto 64px auto;
+  }
+  .slider {
+    padding: 30px 0 29px 0;
+  }
+  .product__info {
+    padding: 65px 0 65px 0;
+    margin: 0;
+    border-left: none;
+    border-right: none;
+  }
+  .other_products {
+    gap: 16px;
+    margin: 129px 0 129px 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .other_products .content__none {
+    display: none;
+  }
+  .buy {
+    margin: 59px 0 129px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .buy__items {
+    margin: 0 auto;
+  }
+  .buy__items article {
+    width: 734px;
+  }
+  .buy__items-buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 49px;
+  }
+  .buy__form form {
+    width: 735px;
+    margin-top: 65px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .buy__form form .form__input .quote {
+    margin-bottom: 0;
+  }
+  .buy__form form .cost {
+    margin-left: 15px;
+    margin-top: 63px;
+    height: 214px;
+  }
+  .registration {
+    margin: 40px 0 96px 0;
+    gap: 22px;
+  }
+  .registration__form {
+    width: 360px;
+  }
+  .registration__form form .gender .desktop_none {
+    display: block;
+  }
+  .registration__advantage h2,
+  .registration__advantage p,
+  .registration__advantage li {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 @media (max-width: 376px) {
   .container {
     max-width: 359px;
+    margin: 0 auto;
     padding: 0;
   }
   .header {
@@ -1573,6 +1688,159 @@ details > ul > li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    gap: 40px;
+  }
+  .intro {
+    padding: 24px 0 46px 0;
+  }
+  .intro .intro_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .intro .intro_container .heading_intro {
+    margin-bottom: 32px;
+  }
+  .filter-menu .filter_container {
+    margin-right: 0;
+  }
+  .filter-menu .filter_container .filter svg {
+    width: 38px;
+    height: 25px;
+  }
+  .filter-menu .filter_trend,
+  .filter-menu .size,
+  .filter-menu .filtr_price {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .filter-menu .mobile_none {
+    display: none;
+  }
+  .catalog {
+    padding: 0;
+    margin-top: 32px;
+  }
+  .slider {
+    position: relative;
+  }
+  .slider-back {
+    position: absolute;
+  }
+  .slider-forward {
+    position: absolute;
+    right: 0;
+  }
+  .product__info {
+    padding: 65px 0 65px 0;
+  }
+  .product__info .product_name {
+    margin-bottom: 32px;
+  }
+  .product__info .about_product {
+    max-width: 326px;
+  }
+  .product__info .product_price {
+    margin-bottom: 32px;
+  }
+  .product__info hr {
+    width: 175px;
+  }
+  .product__info .product-filter {
+    margin: 50px 0 65px 0;
+  }
+  .product__info .product-filter div {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .other_products {
+    padding: 65px 0 64px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .other_products .mobile_none {
+    display: none;
+  }
+  .other_products .content__none {
+    display: block;
+  }
+  .cart-intro h1 {
+    text-align: center;
+  }
+  .buy {
+    padding: 39px 0 96px 0;
+  }
+  .buy__items article {
+    width: 358px;
+    height: 188px;
+    gap: 17px;
+  }
+  .buy__items article .text h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 14px 0 25px 0;
+    max-width: 133px;
+  }
+  .buy__items article .text p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 4px;
+  }
+  .buy__items article .text p input {
+    width: 24px;
+    height: 15px;
+  }
+  .buy__items article svg {
+    width: 10px;
+    height: 11px;
+    top: 17px;
+    right: 12px;
+  }
+  .buy__items-buttons {
+    gap: 10px;
+  }
+  .buy__items-buttons button {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 10px 17px;
+  }
+  .buy__form form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 360px;
+    margin-top: 48px;
+  }
+  .buy__form form .cost {
+    margin-left: 0;
+    margin-top: 48px;
+  }
+  .registration {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 40px auto 100px auto;
     gap: 40px;
   }
 }
